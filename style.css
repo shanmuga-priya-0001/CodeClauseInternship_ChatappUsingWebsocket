@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 203, 233);
+}
+
+.title
+{
+    margin: 20px 0;
+}
+.main
+{
+    border: 8px solid #dddd;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 400px;
+}
+
+.name
+{
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 9px 16px;
+    color: #7e7e7e;
+    background-color: #ebebeb;
+}
+
+.name > span{
+    color: #bbb;
+}
+
+.input-text
+{
+    font-size: 25px;
+    font-weight: 700;
+    color: #7e7e7e;
+    flex-grow: 1 ;
+    border: none;
+    margin: 0px 12px;
+    outline:none;
+    background-color: #ebebeb;
+}
+
+.messege-container
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    width: 400px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.messege-left, .messege-right
+{
+    list-style: none;
+    padding: 8px 12px;
+    margin:12px;
+    max-width: 250px;
+    font-size: 18px;
+    word-wrap: break-word;
+
+}
+.messege-left
+{
+    border-radius: 20px 20px 20px 0px;
+    align-self: flex-start;
+    background-color:rgb(148, 181, 243) ;
+    box-shadow: -2px 2px 4px rgb(196, 214, 247);
+}
+.messege-right
+{
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    background-color:rgb(250, 122, 190);
+    box-shadow: -2px 2px 4px rgb(250, 194, 224);
+    color: #f6f6f6;
+}
+
+.messege-right > p > span,
+ .messege-left > p > span{
+
+display: block;
+font-style: italic;
+font-size: 12px;
+margin-top: 4px;
+}
+
+.feedback 
+{
+    font-style: italic;
+    font-size: 14px;
+    padding: 0px 16px 16px 16px;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+.message-form
+{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.message-input
+{
+    flex-grow: 1;
+    height: 48px;
+    font-size: 16px;
+    border:none;
+    outline: none;
+    padding: 0 12px;
+    background-color: aliceblue;
+}
+.send-button
+{
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.v-divider
+{
+    height: 49px;
+    width: 2px;
+    background-color: #f6f6f6;
+
+}
+
+.total-member
+{
+    margin: 20px 0px;
+    color: #7e7e7e;
+}
